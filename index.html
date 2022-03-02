@@ -13,31 +13,45 @@
 </head>
 <body class="bg-black text-slate-100">
 
-    <header class="w-screen h-auto py-2 px-10 sticky top-0">
-        <section>
+    <header class="w-screen h-full">
+
+        <section class="lg:py-2 py-1 px-10 fixed top-0 w-full z-40">
             <nav class="flex md:justify-between justify-center">
                 <div class="flex items-center md:justify-start w-auto">
-                    <img src="assets/img/netflix.png" alt="Netflix Logo" class="w-28">
+                    <img src="assets/img/netflix.png" alt="Netflix Logo" class="w-28 hover:cursor-pointer">
                     <div class="md:flex hidden justify-between lg:ml-8 md:ml-3 lg:text-sm text-xs">
-                        <a href="#">Home</a>
-                        <a href="#" class="ml-5">TV Show</a>
-                        <a href="#" class="ml-5">Movies</a>
-                        <a href="#" class="ml-5">New & Popular</a>
-                        <a href="#" class="ml-5">My List</a>
-                        <a href="#" class="ml-5">Watch Again</a>
+                        <a href="#" class="text-white hover:cursor-default">Home</a>
+                        <a href="#" class="ml-5 text-gray-300 hover:text-gray-400">TV Show</a>
+                        <a href="#" class="ml-5 text-gray-300 hover:text-gray-400">Movies</a>
+                        <a href="#" class="ml-5 text-gray-300 hover:text-gray-400">New & Popular</a>
+                        <a href="#" class="ml-5 text-gray-300 hover:text-gray-400">My List</a>
+                        <a href="#" class="ml-5 text-gray-300 hover:text-gray-400">Watch Again</a>
                     </div>
                 </div>
-                <div class="md:flex hidden items-center justify-around lg:w-52 md:w-36 md:text-sm text-xs">
+                <div class="md:flex hidden items-center justify-around lg:w-52 md:w-36 lg:text-base text-xs">
                     <button><i class="fa-solid fa-magnifying-glass"></i></button>
                     <button><i class="fa-solid fa-gift"></i></button>
                     <button><i class="fa-solid fa-bell"></i></button>
-                    <div class="flex items-center justify-between ml-2">
+                    <div class="flex items-center justify-between ml-2 group">
                         <img src="assets/img/avatar.jpg" alt="Avatar" class="w-10 rounded">
-                        <button><i class="fa-solid fa-angle-down ml-2"></i></button>
+                        <button><i class="fa-solid fa-angle-down ml-2 group-hover:rotate-180 transition-all"></i></button>
                     </div>
                 </div>
             </nav>
         </section>
+
+        <!-- Hero Banner -->
+        <section>
+            <!-- Wallpaper & gradient-->
+            <div class="absolute bg-gradient-to-t from-transparent to-black top-0 w-full h-10 z-10"></div>
+            <div class="absolute top-0 w-full h-full bg-[url('./assets/img/heroImage.png')] bg-cover bg-center z-0"></div>
+            <div class="absolute bg-gradient-to-b from-transparent to-black bottom-0 w-full h-10 z-10"></div>
+            <!-- content -->
+            <div>
+
+            </div>
+        </section>
+
     </header>
     
 </body>
