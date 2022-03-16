@@ -17,6 +17,14 @@
 
     <title>Home - Netflix</title>
 
+    <style>
+
+        main section::-webkit-scrollbar {
+            display: none;
+        }
+
+    </style>
+
 </head>
 <body class="bg-black text-slate-100">
 
@@ -29,7 +37,7 @@
         <section class="lg:py-2 py-1 px-10 fixed top-0 w-full z-40" id="navbar">
 
             <!-- Top gradient -->
-            <div class="absolute bg-gradient-to-t from-transparent to-black top-0 w-full h-10"></div>
+            <div class="absolute bg-gradient-to-t from-transparent to-black top-0 left-0 w-full h-10"></div>
 
             <nav class="flex md:justify-between justify-center">
 
@@ -138,10 +146,47 @@
     <main class="py-5 px-10 w-full h-auto overflow-x-hidden">
 
         <!-- MyList Section -->
-        <section class="overflow-x-scroll mb-20">
+        <section class="overflow-x-scroll mb-20 group scroll-smooth" id="MyList">
             <h1 class="text-xl absolute">My List</h1>
-            <div class="flex mt-16 space-x-5" style="width: 98rem;">
-                <div class="h-auto">
+
+            <!-- Left Arrow-->
+            <div class="absolute mt-16 w-20 h-40 hidden group-hover:flex z-10 items-center justify-center left_arrow">
+                <div class="absolute w-full h-full z-0 bg-gradient-to-r from-black to-transparent"></div>
+                <button class="text-2xl z-10 w-16 h-16" onclick="translateCarousel('#MyList', 'left')"><i class="fa-solid fa-angle-left"></i></button>
+            </div>
+             <!-- Right Arrow-->
+             <div class="absolute mt-16 w-12 h-40 hidden group-hover:flex z-10 items-center justify-center right-5 right_arrow">
+                <div class="absolute w-full h-full z-0 bg-gradient-to-l from-black to-transparent"></div>
+                <button class="text-2xl z-10 w-16 h-16" onclick="translateCarousel('#MyList', 'right')"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+
+            <div class="flex mt-16 space-x-5" style="width: 182rem;">
+                <div class="h-auto w-96 ml-0">
+                    <a href="#">
+                        <img src="assets/img/main/MyList/1.png" class="rounded" alt="Breaking Bad">
+                    </a>
+                </div>
+                <div class="h-auto w-96">
+                    <a href="#">
+                        <img src="assets/img/main/MyList/2.jpeg" class="rounded" alt="Outlander">
+                    </a>
+                </div>
+                <div class="h-auto w-96">
+                    <a href="#">
+                        <img src="assets/img/main/MyList/3.jpeg" class="rounded" alt="All of us are Dead">
+                    </a>
+                </div>
+                <div class="h-auto w-96">
+                    <a href="#">
+                        <img src="assets/img/main/MyList/4.png" class="rounded" alt="The walking Dead">
+                    </a>
+                </div>
+                <div class="h-auto w-96">
+                    <a href="#">
+                        <img src="assets/img/main/MyList/5.png" class="rounded" alt="Fairy Tail">
+                    </a>
+                </div>
+                <div class="h-auto w-96">
                     <a href="#">
                         <img src="assets/img/main/MyList/1.png" class="rounded" alt="Breaking Bad">
                     </a>
@@ -171,9 +216,46 @@
 
 
         <!-- TV Shows Section -->
-        <section class="overflow-x-scroll mb-20">
+        <section class="overflow-x-scroll mb-20 group scroll-smooth" id="TvShow">
             <h1 class="text-xl absolute">TV Shows</h1>
-            <div class="flex mt-16 space-x-5" style="width:98rem;">
+
+            <!-- Left Arrow-->
+            <div class="absolute mt-16 w-20 h-40 hidden group-hover:flex z-10 items-center justify-center left_arrow">
+                <div class="absolute w-full h-full z-0 bg-gradient-to-r from-black to-transparent"></div>
+                <button class="text-2xl z-10 w-16 h-16" onclick="translateCarousel('#TvShow', 'left')"><i class="fa-solid fa-angle-left"></i></button>
+            </div>
+             <!-- Right Arrow-->
+             <div class="absolute mt-16 w-12 h-40 hidden group-hover:flex z-10 items-center justify-center right-5 right_arrow">
+                <div class="absolute w-full h-full z-0 bg-gradient-to-l from-black to-transparent"></div>
+                <button class="text-2xl z-10 w-16 h-16" onclick="translateCarousel('#TvShow', 'right')"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+
+            <div class="flex mt-16 space-x-5" style="width:182rem;">
+                <div class="h-auto w-96">
+                    <a href="#">
+                        <img src="assets/img/main/Tv-show/1.jpeg" class="rounded" alt="Breaking Bad">
+                    </a>
+                </div>
+                <div class="h-auto w-96">
+                    <a href="#">
+                        <img src="assets/img/main/Tv-show/2.png" class="rounded" alt="Outlander">
+                    </a>
+                </div>
+                <div class="h-auto w-96">
+                    <a href="#">
+                        <img src="assets/img/main/Tv-show/3.jpeg" class="rounded" alt="All of us are Dead">
+                    </a>
+                </div>
+                <div class="h-auto w-96">
+                    <a href="#">
+                        <img src="assets/img/main/Tv-show/4.jpeg" class="rounded" alt="The walking Dead">
+                    </a>
+                </div>
+                <div class="h-auto w-96">
+                    <a href="#">
+                        <img src="assets/img/main/Tv-show/5.jpeg" class="rounded" alt="Fairy Tail">
+                    </a>
+                </div>
                 <div class="h-auto w-96">
                     <a href="#">
                         <img src="assets/img/main/Tv-show/1.jpeg" class="rounded" alt="Breaking Bad">
@@ -205,9 +287,46 @@
 
 
         <!-- Trending Now Section -->
-        <section class="overflow-x-scroll mb-20">
+        <section class="overflow-x-scroll mb-20 group scroll-smooth" id="Trending">
             <h1 class="text-xl absolute">Trending Now</h1>
-            <div class="flex mt-16 space-x-5" style="width: 98rem;">
+
+            <!-- Left Arrow-->
+            <div class="absolute mt-16 w-20 h-40 hidden group-hover:flex z-10 items-center justify-center left_arrow">
+                <div class="absolute w-full h-full z-0 bg-gradient-to-r from-black to-transparent"></div>
+                <button class="text-2xl z-10 w-16 h-16" onclick="translateCarousel('#Trending', 'left')"><i class="fa-solid fa-angle-left"></i></button>
+            </div>
+             <!-- Right Arrow-->
+             <div class="absolute mt-16 w-12 h-40 hidden group-hover:flex z-10 items-center justify-center right-5 right_arrow">
+                <div class="absolute w-full h-full z-0 bg-gradient-to-l from-black to-transparent"></div>
+                <button class="text-2xl z-10 w-16 h-16" onclick="translateCarousel('#Trending', 'right')"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+
+            <div class="flex mt-16 space-x-5" style="width: 182rem;">
+                <div class="h-auto w-96">
+                    <a href="#">
+                        <img src="assets/img/main/trending/1.jpeg" class="rounded" alt="Baki Hanma">
+                    </a>
+                </div>
+                <div class="h-auto w-96">
+                    <a href="#">
+                        <img src="assets/img/main/trending/2.jpeg" class="rounded" alt="Outlander">
+                    </a>
+                </div>
+                <div class="h-auto w-96">
+                    <a href="#">
+                        <img src="assets/img/main/trending/3.jpeg" class="rounded" alt="Barbares">
+                    </a>
+                </div>
+                <div class="h-auto w-96">
+                    <a href="#">
+                        <img src="assets/img/main/trending/4.jpeg" class="rounded" alt="Baki">
+                    </a>
+                </div>
+                <div class="h-auto w-96">
+                    <a href="#">
+                        <img src="assets/img/main/trending/5.jpeg" class="rounded" alt="Ozark">
+                    </a>
+                </div>
                 <div class="h-auto w-96">
                     <a href="#">
                         <img src="assets/img/main/trending/1.jpeg" class="rounded" alt="Baki Hanma">
@@ -239,9 +358,46 @@
 
 
         <!-- Watch It again Section -->
-        <section class="overflow-x-scroll mb-32">
+        <section class="overflow-x-scroll mb-32 group scroll-smooth" id="WatchAgain">
             <h1 class="text-xl absolute">Watch it Again</h1>
-            <div class="flex mt-16 space-x-5" style="width: 98rem;">
+
+            <!-- Left Arrow-->
+            <div class="absolute mt-16 w-20 h-40 hidden group-hover:flex z-10 items-center justify-center left_arrow">
+                <div class="absolute w-full h-full z-0 bg-gradient-to-r from-black to-transparent"></div>
+                <button class="text-2xl z-10 w-16 h-16" onclick="translateCarousel('#WatchAgain', 'left')"><i class="fa-solid fa-angle-left"></i></button>
+            </div>
+             <!-- Right Arrow-->
+             <div class="absolute mt-16 w-12 h-40 hidden group-hover:flex z-10 items-center justify-center right-5 right_arrow">
+                <div class="absolute w-full h-full z-0 bg-gradient-to-l from-black to-transparent"></div>
+                <button class="text-2xl z-10 w-16 h-16" onclick="translateCarousel('#WatchAgain', 'right')"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+
+            <div class="flex mt-16 space-x-5" style="width: 182rem;">
+                <div class="h-auto w-96">
+                    <a href="#">
+                        <img src="assets/img/main/jsp3/1.jpeg" class="rounded" alt="Narcos">
+                    </a>
+                </div>
+                <div class="h-auto w-96">
+                    <a href="#">
+                        <img src="assets/img/main/jsp3/2.jpeg" class="rounded" alt="The Rain">
+                    </a>
+                </div>
+                <div class="h-auto w-96">
+                    <a href="#">
+                        <img src="assets/img/main/jsp3/3.jpeg" class="rounded" alt="Octobre">
+                    </a>
+                </div>
+                <div class="h-auto w-96">
+                    <a href="#">
+                        <img src="assets/img/main/jsp3/4.jpeg" class="rounded" alt="Kalifat">
+                    </a>
+                </div>
+                <div class="h-auto w-96">
+                    <a href="#">
+                        <img src="assets/img/main/jsp3/5.jpeg" class="rounded" alt="The last Kingdom">
+                    </a>
+                </div>
                 <div class="h-auto w-96">
                     <a href="#">
                         <img src="assets/img/main/jsp3/1.jpeg" class="rounded" alt="Narcos">
@@ -729,6 +885,7 @@
     </footer>
 
 
+    <script src="assets/js/main.js"></script>
 
 </body>
 </html>
