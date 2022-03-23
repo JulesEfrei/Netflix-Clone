@@ -105,8 +105,7 @@ function HTMLelement(link, type) {
 
         let video = document.createElement("video")
         video.setAttribute("src", "./assets/video/header.mp4")
-        // video.setAttribute("loop")
-        video.setAttribute("class", "absolute top-0 min-h-full min-w-100 object-cover rounded")
+        video.setAttribute("class", "absolute top-0 min-h-full min-w-full object-cover rounded")
         video.setAttribute("id", id[count])
         video.setAttribute("onclick", `toggleMuted('#${id[count]}')`)
 
@@ -121,6 +120,7 @@ function HTMLelement(link, type) {
 
     let img = document.createElement("img")
     img.setAttribute("src", link)
+    img.setAttribute("loading", "lazy")
     img.setAttribute("class", "rounded")
 
     a.appendChild(img)
