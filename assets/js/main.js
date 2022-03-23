@@ -72,7 +72,11 @@ function randomize() {
             let url = Object.values(links[element])[indexList]
 
             //Create Element and push it inside the container
-            let elm = HTMLelement(url)
+            if(element == "MyList") {
+                var elm = HTMLelement(url, "video")
+            } else {
+                var elm = HTMLelement(url, "normal")
+            }
 
             container.appendChild(elm)
 
@@ -84,10 +88,33 @@ function randomize() {
 
 }
 
-function HTMLelement(link) {
+var count = 0
+
+function HTMLelement(link, type) {
 
     let div = document.createElement("div")
-    div.setAttribute("class", "h-auto w-96")
+    div.setAttribute("class", "h-auto w-96 hover:scale-125 bg-no-repeat transition-all object-cover overflow-y-visible")
+
+
+    if(type == "video") {
+
+        let id = ["un", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", "dix"]
+
+        div.setAttribute("onmouseover", `play('#${id[count]}')`)
+        div.setAttribute("onmouseout", `pause('#${id[count]}')`)
+
+        let video = document.createElement("video")
+        video.setAttribute("src", "./assets/video/header.mp4")
+        // video.setAttribute("loop")
+        video.setAttribute("class", "absolute top-0 min-h-full min-w-100 object-cover rounded")
+        video.setAttribute("id", id[count])
+        video.setAttribute("onclick", `toggleMuted('#${id[count]}')`)
+
+        div.appendChild(video)
+
+        count++
+
+    }
 
     let a = document.createElement("a")
     a.setAttribute("href", "#")
@@ -110,8 +137,6 @@ window.onload = function() {
     randomize()
 
     navbarStyle()
-
-    pause("#HeaderVideo")
 
 }
 
