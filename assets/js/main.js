@@ -59,7 +59,7 @@ function randomize() {
         //Generate 10 images
         while(i < 10) {
 
-            //Random Number between 0 and 20 (We Have 20 links and we rander only 10)
+            //Random Number between 0 and 20 (We Have 20 links and we render only 10)
             var indexList = Math.floor(Math.random() * 20 )
             
             while(array.find(elm => elm == indexList)) {
@@ -110,5 +110,31 @@ window.onload = function() {
     randomize()
 
     navbarStyle()
+
+    pause("#HeaderVideo")
+
+}
+
+function play(video) {
+
+    document.querySelector(video).classList.add("z-[2]")
+
+    document.querySelector(video).play()
+
+}
+
+function pause(video) {
+
+    document.querySelector(video).pause()
+
+    document.querySelector(video).classList.remove("z-[2]")
+
+}
+
+function toggleMuted(elm) {
+
+    let video = document.querySelector(elm)
+
+    video.muted = !video.muted;
 
 }

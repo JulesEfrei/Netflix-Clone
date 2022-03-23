@@ -105,10 +105,11 @@
         </section>
 
         <!-- Hero Banner -->
-        <section class="w-screen h-screen">
+        <section class="w-screen h-screen" id="HeroBanner" onmouseover="play('#HeaderVideo')" onmouseout="pause('#HeaderVideo')">
 
             <!-- Wallpaper & gradient-->
-            <div class="absolute top-0 w-full h-full bg-[url('./assets/img/header/heroImage.png')] bg-cover bg-center z-0"></div>
+            <div class="absolute top-0 w-full h-full bg-[url('./assets/img/header/heroImage.png')] bg-cover bg-center z-[1]"></div>
+            <video src="./assets/video/header.mp4" autoplay loop class="absolute top-0 min-h-full min-w-100 object-cover" id="HeaderVideo" onclick="toggleMuted('#HeaderVideo')"></video>
             <div class="absolute bg-gradient-to-b from-transparent to-black bottom-0 w-full h-10"></div>
 
             <!-- Bio content -->
