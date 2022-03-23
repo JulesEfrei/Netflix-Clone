@@ -62,7 +62,7 @@ function randomize() {
             //Random Number between 0 and 20 (We Have 20 links and we render only 10)
             var indexList = Math.floor(Math.random() * 20 )
             
-            while(array.find(elm => elm == indexList)) {
+            while(array.find(elm => elm == indexList) != undefined) {
                 indexList = Math.floor(Math.random() * 20 )
             }
             
@@ -107,6 +107,7 @@ function HTMLelement(link, type) {
         video.setAttribute("src", "./assets/video/header.mp4")
         video.setAttribute("class", "absolute top-0 min-h-full min-w-full object-cover rounded")
         video.setAttribute("id", id[count])
+        video.setAttribute("preload", "metadata")
         video.setAttribute("onclick", `toggleMuted('#${id[count]}')`)
 
         div.appendChild(video)
