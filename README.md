@@ -109,7 +109,7 @@ List of people
 
 Linked'in - [Jules](https://www.linkedin.com/in/jules-bruzeau/)
 
-GitHub Profile: [https://github.com/JulesEfrei/](https://github.com/JulesEfrei/)
+GitHub Profile: [JulesEfrei](https://github.com/JulesEfrei/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
