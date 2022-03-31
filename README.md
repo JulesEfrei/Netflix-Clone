@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   
-  <img src="https://drive.google.com/uc?export=view&id=1_n2W-ts_EEphAVsKQIXAOvebP14eYlrQ" alt="Logo" width="400" height="200" />
+  <img src="./assets/img/GitHub/netflixLogo.png" alt="Logo" width="400" height="200" />
 
   <h2 align="center">Netflix Clone</h2>
 
@@ -55,7 +55,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="https://drive.google.com/uc?export=view&id=1PDesRoG128QH9PkrVKLHjlr3FkcOQ6JV" alt="Logo" width="950" height="550" />
+<img src="./assets/img/GitHub/netflixClone.png" alt="Logo" width="950" height="550" />
 
 Clone the home page of Netflix with Tailwind.css (School Project)
 
