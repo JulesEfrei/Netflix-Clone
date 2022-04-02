@@ -108,7 +108,6 @@ function HTMLelement(link, type) {
         video.setAttribute("class", "absolute top-0 min-h-full min-w-full object-cover rounded")
         video.setAttribute("id", id[count])
         video.setAttribute("preload", "metadata")
-        video.setAttribute("onclick", `toggleMuted('#${id[count]}')`)
 
         div.appendChild(video)
 
@@ -157,10 +156,18 @@ function pause(video) {
 
 }
 
-function toggleMuted(elm) {
+function toggleSection(id) {
 
-    let video = document.querySelector(elm)
+    let elmDisplay = document.getElementById(id)
 
-    video.muted = !video.muted;
+    if( elmDisplay.style.display == "block") {
+
+        elmDisplay.style.display = "none"
+
+    } else {
+
+        elmDisplay.style.display = "block"
+
+    }
 
 }

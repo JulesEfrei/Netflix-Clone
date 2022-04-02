@@ -66,13 +66,13 @@
                     <button class="focus:outline-none"><i class="fa-solid fa-gift"></i></button>
                     <button class="focus:outline-none"><i class="fa-solid fa-bell"></i></button>
 
-                    <div class="flex items-center justify-between ml-2 group">
+                    <div class="flex items-center justify-between ml-2 group" onmouseover="toggleSection('profileSection')" onmouseout="toggleSection('profileSection')">
 
                         <img src="assets/img/header/avatar.jpg" alt="Avatar" class="w-10 rounded group-hover:cursor-pointer">
                         <button class="focus:outline-none"><i class="fa-solid fa-angle-down ml-2 group-hover:rotate-180 transition-all"></i></button>
 
                         <!-- Profile Block -->
-                        <div class="absolute right-0 translate-x-full top-16 mt-3 bg-black w-48 border border-gray-800 opacity-0 group-hover:opacity-100 group-hover:right-10 group-hover:translate-x-0 transition-opacity">
+                        <div class="absolute right-0 hidden top-16 mt-3 bg-black w-48 border border-gray-800 right-10 transition-all" id="profileSection">
                             <h1 class="absolute right-10 text-lg -translate-y-full mt-1"><i class="fa-solid fa-angle-down rotate-180"></i></h1>
                             <div class="p-3 border-b border-gray-500 flex-col">
                                 <div class="flex mb-3 items-center ">
@@ -109,7 +109,7 @@
 
             <!-- Wallpaper & gradient-->
             <div class="absolute top-0 w-full h-full bg-[url('./assets/img/header/heroImage.png')] bg-cover bg-center z-[1]"></div>
-            <video src="./assets/video/header.mp4" loop class="absolute top-0 min-h-full min-w-100 object-cover" id="HeaderVideo" onclick="toggleMuted('#HeaderVideo')"></video>
+            <video src="./assets/video/header.mp4" loop muted class="absolute top-0 min-h-full min-w-100 object-cover" id="HeaderVideo"></video>
             <div class="absolute bg-gradient-to-b from-transparent to-black bottom-0 w-full h-10"></div>
 
             <!-- Bio content -->
