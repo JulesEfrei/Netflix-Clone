@@ -64,7 +64,68 @@
 
                     <button class="focus:outline-none"><i class="fa-solid fa-magnifying-glass"></i></button>
                     <button class="focus:outline-none"><i class="fa-solid fa-gift"></i></button>
-                    <button class="focus:outline-none"><i class="fa-solid fa-bell"></i></button>
+
+                    <div onmouseover="toggleSection('notificationSection')" onmouseout="toggleSection('notificationSection')">
+                        <button class="focus:outline-none"><i class="fa-solid fa-bell"></i></button>
+
+                        <div class="absolute w-[26rem] h-96 top-16 lg:right-28 md:right-24 border-t-2 border-white hover:cursor-pointer hidden transition-all" id="notificationSection">
+                            <h1 class="absolute lg:right-8 md:right-6 text-lg -translate-y-full mt-1"><i class="fa-solid fa-angle-down rotate-180"></i></h1>
+                            <div class="h-full overflow-y-scroll">
+
+                                <div class="flex w-full p-4 h-32 border-b border-gray-500 bg-black/75 hover:bg-black">
+                                    <img src="./assets/img/main/new-release/1.jpeg" class="w-[169px] object-cover rounded-xl">
+                                    <div class="ml-2 group">
+                                        <h1 class="text-md mb-1 text-gray-300 group-hover:text-white">New, Drive to Survive Season 4 is available !</h1>
+                                        <h3 class="text-gray-500 text-xs">1 days ago</h3>
+                                    </div>
+                                </div>
+                                <div class="flex w-full p-4 h-32 border-b border-gray-500 bg-black/75 hover:bg-black">
+                                    <img src="./assets/img/main/new-release/2.jpeg" class="w-[169px] object-cover rounded-xl">
+                                    <div class="ml-2 group">
+                                        <h1 class="text-md mb-1 text-gray-300 group-hover:text-white">New, The Last Kingdom</h1>
+                                        <h3 class="text-gray-500 text-xs">3 days ago</h3>
+                                    </div>
+                                </div>
+                                <div class="flex w-full p-4 h-32 border-b border-gray-500 bg-black/75 hover:bg-black">
+                                    <img src="./assets/img/main/new-release/3.jpeg" class="w-[169px] object-cover rounded-xl">
+                                    <div class="ml-2 group">
+                                        <h1 class="text-md mb-1 text-gray-300 group-hover:text-white">New, Adam à travers le temps</h1>
+                                        <h3 class="text-gray-500 text-xs">3 days ago</h3>
+                                    </div>
+                                </div>
+                                <div class="flex w-full p-4 h-32 border-b border-gray-500 bg-black/75 hover:bg-black">
+                                    <img src="./assets/img/main/new-release/4.png" class="w-[169px] object-cover rounded-xl">
+                                    <div class="ml-2 group">
+                                        <h1 class="text-md mb-1 text-gray-300 group-hover:text-white">New, Reine du Sud season 2</h1>
+                                        <h3 class="text-gray-500 text-xs">5 days ago</h3>
+                                    </div>
+                                </div>
+                                <div class="flex w-full p-4 h-32 border-b border-gray-500 bg-black/75 hover:bg-black">
+                                    <img src="./assets/img/main/new-release/5.jpeg" class="w-[169px] object-cover rounded-xl">
+                                    <div class="ml-2 group">
+                                        <h1 class="text-md mb-1 text-gray-300 group-hover:text-white">New, Son vrai visage</h1>
+                                        <h3 class="text-gray-500 text-xs">6 days ago</h3>
+                                    </div>
+                                </div>
+                                <div class="flex w-full p-4 h-32 border-b border-gray-500 bg-black/75 hover:bg-black">
+                                    <img src="https://occ-0-3005-55.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQr73N2GHHAgm_evz79GpPn2nh7DHtShOToVNiTxuKKp1blpIpm6aQ1uZ7yBXuhC2tV0xa1rm1iNc3Y0DbkZ-IBEOBw.webp?r=2df" class="w-[169px] object-cover rounded-xl">
+                                    <div class="ml-2 group">
+                                        <h1 class="text-md mb-1 text-gray-300 group-hover:text-white">New, Le procès</h1>
+                                        <h3 class="text-gray-500 text-xs">1 week ago</h3>
+                                    </div>
+                                </div>
+                                <div class="flex w-full p-4 h-32 border-b border-gray-500 bg-black/75 hover:bg-black">
+                                    <img src="https://occ-0-3005-55.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZFvYYhHDCViOi_7gJh1ellt1ZxjpPlp1fCShNCLbdTg_THA07Pel7s8wXRGysHsJqo1GPxRkrw892PEy3pxOZp3V8bguDpW0gFxtErfBR3OzojJ-2gOkV-BYO188xaYg74aeygTjjFgQqLW7_-IufEudNfwEQ.jpg?r=6c6" class="w-[169px] object-cover rounded-xl">
+                                    <div class="ml-2 group">
+                                        <h1 class="text-md mb-1 text-gray-300 group-hover:text-white">New, Light the night season 3</h1>
+                                        <h3 class="text-gray-500 text-xs">1 week ago</h3>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
 
                     <div class="flex items-center justify-between ml-2 group" onmouseover="toggleSection('profileSection')" onmouseout="toggleSection('profileSection')">
 
@@ -72,7 +133,7 @@
                         <button class="focus:outline-none"><i class="fa-solid fa-angle-down ml-2 group-hover:rotate-180 transition-all"></i></button>
 
                         <!-- Profile Block -->
-                        <div class="absolute right-0 hidden top-16 mt-3 bg-black w-48 border border-gray-800 right-10 transition-all" id="profileSection">
+                        <div class="absolute hidden top-16 mt-3 bg-black w-48 border border-gray-800 right-10 transition-all" id="profileSection">
                             <h1 class="absolute right-10 text-lg -translate-y-full mt-1"><i class="fa-solid fa-angle-down rotate-180"></i></h1>
                             <div class="p-3 border-b border-gray-500 flex-col">
                                 <div class="flex mb-3 items-center ">
