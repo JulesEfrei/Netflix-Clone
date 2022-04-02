@@ -108,6 +108,7 @@ function HTMLelement(link, type) {
         video.setAttribute("class", "absolute top-0 min-h-full min-w-full object-cover rounded")
         video.setAttribute("id", id[count])
         video.setAttribute("preload", "metadata")
+        video.setAttribute("muted", "")
 
         div.appendChild(video)
 
