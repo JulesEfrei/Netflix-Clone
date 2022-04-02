@@ -60,7 +60,7 @@
 Clone the home page of Netflix with Tailwind.css (School Project)
 
 
-**State of project => v1.0.0**
+**State of project => v1.5.0**
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -83,8 +83,8 @@ This section should list any major frameworks/libraries used to bootstrap your p
 Here is the roadmap of the project. Checked flags mean the features is out and unchecked flags mean that the feature is comming.
 
 - [x] Release v.1.0.0
-- [ ] Add notification container
-- [ ] Show profile container with JavaScript
+- [x] Add notification container
+- [x] Show profile container with JavaScript
 
 See the [open issues](https://github.com/JulesEfrei/Netflix-Clone/issues) for a full list of proposed features (and known issues).
 
